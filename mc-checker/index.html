@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MC Username Checker</title>
+  <style>
+    body {
+      font-family: monospace;
+      background-color: #111;
+      color: #eee;
+      padding: 20px;
+    }
+    .available { color: #0f0; }
+    .taken { color: #f33; }
+    .error, .invalid { color: #ff0; }
+    input {
+      background: #222;
+      color: #eee;
+      border: 1px solid #444;
+      padding: 6px;
+      font-size: 1em;
+    }
+    button {
+      background: #0af;
+      color: #fff;
+      border: none;
+      padding: 6px 10px;
+      margin-left: 6px;
+      cursor: pointer;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    td {
+      padding: 6px;
+      border-bottom: 1px solid #333;
+    }
+    h1 {
+      color: #0af;
+    }
+  </style>
+</head>
+<body>
+  <h1>MC Username Checker</h1>
+
+  <div>
+    <input id="searchInput" placeholder="Search username..." maxlength="16">
+    <button onclick="search()">Check</button>
+    <div id="searchResult"></div>
+  </div>
+
+  <div id="stats">Waiting for data...</div>
+  <table>
+    <thead>
+      <tr><th>Username</th><th>Status</th></tr>
+    </thead>
+    <tbody id="resultsBody"></tbody>
+  </table>
+
+  <script>
+    const ws = new WebSocket(`ws://${location.host}/ws`);
+    const entries = new Map();
+
+    ws.onopen = () => {
+      console.log("✅ WebSocket connected!");
+    };
+
+    ws.onerror = (err) => {
+      console.error("❌ WebSocket error:", err);
+      document.getElementById("stats").innerText = "WebSocket connection failed.";
+    };
+
+    ws.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+
+      if (data.type === "search_result") {
+        entries.set(data.name, { name: data.name, status: data.status });
+        renderTable();
+        const resultText = data.status === "invalid"
+          ? "❌ Invalid username."
+          : `Name <b>${data.name}</b> is <b>${data.status.toUpperCase()}</b>`;
+        document.getElementById("searchResult").innerHTML = resultText;
+        return;
+      }
+
+      if (data.name && data.status) {
+        entries.set(data.name, { name: data.name, status: data.status });
+        renderTable();
+      }
+
+      if (data.stats) {
+        const s = data.stats;
+        document.getElementById("stats").innerHTML = `
+          Checked: ${s.total || 0} |
+          ✅ Available: ${s.available || 0} |
+          ❌ Taken: ${s.taken || 0} |
+          ⚠️ Errors: ${s.errors || 0}
+        `;
+      }
+    };
+
+    function renderTable() {
+      const sorted = [...entries.values()].sort((a, b) => {
+        const order = { available: 0, taken: 1, error: 2, invalid: 3 };
+        return order[a.status] - order[b.status];
+      });
+
+      document.getElementById("resultsBody").innerHTML = sorted.map(entry => `
+        <tr class="${entry.status}">
+          <td>${entry.name}</td>
+          <td>${entry.status.toUpperCase()}</td>
+        </tr>
+      `).join('');
+    }
+
+    function search() {
+      const input = document.getElementById("searchInput");
+      const username = input.value.trim().toLowerCase();
+      if (username.length >= 3 && username.length <= 16) {
+        ws.send(JSON.stringify({ type: "search", username }));
+        document.getElementById("searchResult").innerText = "Checking...";
+      } else {
+        document.getElementById("searchResult").innerText = "Username must be 3–16 valid characters.";
+      }
+    }
+  </script>
+</body>
+</html>
