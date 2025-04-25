@@ -1,0 +1,62 @@
+{
+  "navbar": {
+    "title": "Aland Aki",
+    "terminal": "Åbn Terminal"
+  },
+  "hero": {
+    "headline": "Full stack udvikler",
+    "headline2": "Værktøjer til udviklere og forretninger",
+    "headline3": "Analyser. Automatiser. Skab.",
+    "subtext": "Jeg er Aland Aki — en full-stack udvikler, der skaber alle former for software værktøjer."
+  },
+  "about": {
+    "title": "Om mig",
+    "description": "Jeg er en passioneret udvikler med kærlighed til automatisering, UI/UX og rent design. Jeg bygger værktøjer, der hjælper udviklere med at arbejde smartere — ikke hårdere.",
+    "stack": ["React", "Node.js", "Tailwind", "AI"]
+  },
+  "tools": {
+    "title": "Mine værktøjer",
+    "open": "Åben →",
+    "mcChecker": {
+      "title": "MC Brugernavnstjekker",
+      "description": "Tjek tilgængeligheden af Minecraft-brugernavne i realtid."
+    },
+    "typingTest": {
+      "title": "Skrivehastighedstester",
+      "description": "Test hvor hurtigt du skriver og se WPM i realtid."
+    },
+    "responsiveViewer": {
+      "title": "Responsiv Breakpoint-visualisering",
+      "description": "Se en hjemmeside på mobil, tablet og desktop størrelser."
+    },
+    "bcrypt": {
+      "title": "Bcrypt Generator",
+      "description": "Hash og verificer adgangskoder med bcrypt."
+    }
+  },
+  "stats": {
+    "title": "Mine statistikker",
+    "tools": "Byggede værktøjer",
+    "sites": "Hjemmesider skabt",
+    "coffee": "Kopper kaffe"
+  },
+  "testimonials": {
+    "title": "Udviklere siger",
+    "quotes": [
+      "Alands værktøjer er utrolig hurtige og nemme at bruge. En legende.",
+      "Jeg bruger hans skrivehastighedstester hver uge. Enkel, elegant, vanedannende."
+    ]
+  },
+  "newsletter": {
+    "title": "Hold dig opdateret",
+    "description": "Få udviklerværktøjer i din indbakke. Ingen spam, kun ren kode.",
+    "placeholder": "dig@domæne.dk",
+    "button": "Tilmeld dig"
+  },
+  "footer": {
+    "text": "Bygget med 💻 & ☕"
+  },
+  "nowplaying": {
+  "title": "Jeg lytter til.."
+  }
+}

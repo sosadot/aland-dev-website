@@ -1,0 +1,62 @@
+{
+  "navbar": {
+    "title": "Aland Aki",
+    "terminal": "Open Terminal"
+  },
+  "hero": {
+    "headline": "Full stack developer",
+    "headline2": "Tools for developers and businesses",
+    "headline3": "Analyze. Automatise. Create.",
+    "subtext": "I'm Aland Aki — a full-stack developer creating fast, clean tools that automate, analyze, and empower."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I’m a passionate developer with a love for automation, UI/UX, and clean design. I build tools that help developers work smarter — not harder.",
+    "stack": ["React", "Node.js", "Tailwind", "AI"]
+  },
+  "tools": {
+    "title": "My Tools",
+    "open": "Open Tool →",
+    "mcChecker": {
+      "title": "MC Username Checker",
+      "description": "Check Minecraft username availability in real-time."
+    },
+    "typingTest": {
+      "title": "Typing Speed Tester",
+      "description": "Test how fast you type and see live WPM."
+    },
+    "responsiveViewer": {
+      "title": "Responsive Breakpoint Visualizer",
+      "description": "Preview any website across mobile, tablet, and desktop breakpoints."
+    },
+    "bcrypt": {
+      "title": "Bcrypt Generator",
+      "description": "Hash and verify passwords using bcrypt with ease."
+    }
+  },
+  "stats": {
+    "title": "My Stats",
+    "tools": "Tools Built",
+    "sites": "Websites Created",
+    "coffee": "Cups of Coffee"
+  },
+  "testimonials": {
+    "title": "What Devs Say",
+    "quotes": [
+      "Aland’s tools are ridiculously fast and easy to use. Absolute legend.",
+      "I use his typing tester every week. Simple, slick, addictive."
+    ]
+  },
+  "newsletter": {
+    "title": "Stay Updated",
+    "description": "Get dev tools in your inbox. No spam, just clean code.",
+    "placeholder": "you@domain.dev",
+    "button": "Subscribe"
+  },
+  "footer": {
+    "text": "Built with 💻 & ☕"
+  },
+  "nowplaying": {
+  "title": "I'm listening to"
+  }
+}

@@ -1,4 +1,9 @@
+// components/ToolCard.jsx
+import { useTranslation } from "react-i18next";
+
 export default function ToolCard({ title, description, link }) {
+  const { t } = useTranslation();
+
   return (
     <a
       href={link}
@@ -6,7 +11,7 @@ export default function ToolCard({ title, description, link }) {
     >
       <h4 className="text-xl font-semibold mb-1 text-white">{title}</h4>
       <p className="text-gray-400 text-sm mb-2">{description}</p>
-      <span className="text-blue-400 text-sm">Open Tool →</span>
+      <span className="text-blue-400 text-sm">{t("tools.open")}</span>
     </a>
   );
 }
