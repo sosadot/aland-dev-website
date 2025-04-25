@@ -1,6 +1,6 @@
-// File: src/components/Navbar.jsx
 import { BsSun, BsMoonStars } from "react-icons/bs";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import TerminalButton from "./TerminalButton";
 import LanguageSelector from "./LanguageSelector";
 
@@ -21,9 +21,19 @@ export default function Navbar({ darkMode, setDarkMode }) {
       }`}
     >
       <h1 className="font-bold text-xl">Aland Aki</h1>
+
       <div className="flex items-center gap-4">
         <LanguageSelector selectedLang={selectedLang} setSelectedLang={setSelectedLang} />
+
+        <Link
+          to="/notepad"
+          className="text-sm px-3 py-1 rounded hover:bg-white/10 transition border border-white/10"
+        >
+          📝 Notepad
+        </Link>
+
         <TerminalButton />
+
         <button onClick={() => setDarkMode(!darkMode)} className="text-xl">
           {darkMode ? <BsSun /> : <BsMoonStars />}
         </button>

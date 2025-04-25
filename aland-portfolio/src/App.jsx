@@ -7,6 +7,7 @@ import McCheckerPage from './tools/McCheckerPage';
 import Terminal from './pages/Terminal';
 import ResponsiveViewerPage from './pages/ResponsiveViewerPage';
 import BcryptTool from "./tools/BcryptTool";
+import NotepadPage from "./pages/NotepadPage";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/tools/responsive-viewer" element={<ResponsiveViewerPage />} />
         <Route path="/tools/bcrypt" element={<BcryptTool />} />
         <Route path="/terminal" element={<Terminal />} />
+        <Route path="/notepad" element={<NotepadPage />} />
       </Routes>
     </div>
   );
