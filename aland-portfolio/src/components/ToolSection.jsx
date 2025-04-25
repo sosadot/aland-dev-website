@@ -27,6 +27,26 @@ export default function ToolSection() {
       description: t("tools.bcrypt.description"),
       link: "/tools/bcrypt",
     },
+    {
+      title: t("tools.jwt.title"),
+      description: t("tools.jwt.description"),
+      link: "/tools/jwt-decoder"
+    },
+    {
+      title: t("tools.packagejson.title"),
+      description: t("tools.packagejson.description"),
+      link: "/tools/package-visualizer"
+    },
+    {
+      title: t("tools.cssanimation.title"),
+      description: t("tools.cssanimation.description"),
+      link: "/tools/css-animation"
+    },
+    {
+      title: t("tools.thisorthat.title"),
+      description: t("tools.thisorthat.description"),
+      link: "/tools/this-or-that"
+    }     
   ];  
 
   return (

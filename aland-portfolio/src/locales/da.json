@@ -32,6 +32,22 @@
     "bcrypt": {
       "title": "Bcrypt Generator",
       "description": "Hash og verificer adgangskoder med bcrypt."
+    },
+    "jwt": {
+      "title": "JWT Decoder",
+      "description": "Decode dine JWT Web Tokens."
+    },
+    "packagejson": {
+      "title": "package.json Visualizer",
+      "description": "Visualiser din package.json og se scripts/dependencies."
+    },
+    "cssanimation": {
+      "title": "CSS Animation Legeplads",
+      "description": "Bedste sted for CSS Animation."
+    },
+    "thisorthat": {
+      "title": "This Or That",
+      "description": "Et spil hvor man skal vælge enten dét eller det andet.."
     }
   },
   "stats": {

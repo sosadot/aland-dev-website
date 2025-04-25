@@ -7,6 +7,12 @@ import McCheckerPage from './tools/McCheckerPage';
 import Terminal from './pages/Terminal';
 import ResponsiveViewerPage from './pages/ResponsiveViewerPage';
 import BcryptTool from "./tools/BcryptTool";
+import NotepadPage from "./pages/NotepadPage";
+import JWTDecoder from './tools/JWTDecoder';
+import PackageJsonVisualizer from './tools/PackageJsonVisualizer';
+import CSSAnimationPlayground from './tools/CSSAnimationPlayground';
+import ThisOrThat from "./tools/ThisOrThat";
+import Projects from "./pages/Projects";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -24,6 +30,12 @@ export default function App() {
         <Route path="/tools/responsive-viewer" element={<ResponsiveViewerPage />} />
         <Route path="/tools/bcrypt" element={<BcryptTool />} />
         <Route path="/terminal" element={<Terminal />} />
+        <Route path="/notepad" element={<NotepadPage />} />
+        <Route path="/tools/jwt-decoder" element={<JWTDecoder />} />
+        <Route path="/tools/package-visualizer" element={<PackageJsonVisualizer />} />
+        <Route path="/tools/css-animation" element={<CSSAnimationPlayground />} />
+        <Route path="/tools/this-or-that" element={<ThisOrThat />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </div>
   );

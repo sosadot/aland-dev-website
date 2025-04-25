@@ -32,6 +32,22 @@
     "bcrypt": {
       "title": "Bcrypt Generator",
       "description": "Hash and verify passwords using bcrypt with ease."
+    },
+    "jwt": {
+      "title": "JWT Decoder",
+      "description": "Decode and inspect your JSON Web Tokens"
+    },
+    "packagejson": {
+      "title": "package.json Visualizer",
+      "description": "View scripts and dependencies from your package.json."
+    },
+    "cssanimation": {
+      "title": "CSS Animation Playground",
+      "description": "Tweak, preview and export custom animations live."
+    },
+    "thisorthat": {
+      "title": "This Or That",
+      "description": "A quick-fire game of preferences. Choose wisely.."
     }
   },
   "stats": {
