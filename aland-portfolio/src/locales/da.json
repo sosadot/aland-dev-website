@@ -6,20 +6,20 @@
   "hero": {
     "headline": "Full stack udvikler",
     "headline2": "Værktøjer til udviklere og forretninger",
-    "headline3": "Analyser. Automatiser. Skab.",
-    "subtext": "Jeg er Aland Aki — en full-stack udvikler, der skaber alle former for software værktøjer."
+    "headline3": "Drøm. Tænk. Skab.",
+    "subtext": "Jeg er Aland Aki — en full-stack udvikler, der bygger hurtige og pålidelige værktøjer til at automatisere opgaver og løse virkelige problemer."
   },
   "about": {
     "title": "Om mig",
-    "description": "Jeg er en passioneret udvikler med kærlighed til automatisering, UI/UX og rent design. Jeg bygger værktøjer, der hjælper udviklere med at arbejde smartere — ikke hårdere.",
+    "description": "Jeg er en udvikler med fokus på AI, Frontend & Backend.",
     "stack": ["React", "Node.js", "Tailwind", "AI"]
   },
   "tools": {
     "title": "Mine værktøjer",
-    "open": "Åben →",
+    "open": "Åben",
     "mcChecker": {
       "title": "MC Brugernavnstjekker",
-      "description": "Tjek tilgængeligheden af Minecraft-brugernavne i realtid."
+      "description": "Tjek tilgængeligheden af MC-brugernavne i realtid."
     },
     "typingTest": {
       "title": "Skrivehastighedstester",

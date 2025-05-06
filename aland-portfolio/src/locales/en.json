@@ -6,20 +6,20 @@
   "hero": {
     "headline": "Full stack developer",
     "headline2": "Tools for developers and businesses",
-    "headline3": "Analyze. Automatise. Create.",
-    "subtext": "I'm Aland Aki — a full-stack developer creating fast, clean tools that automate, analyze, and empower."
+    "headline3": "Dream. Think. Create.",
+    "subtext": "I'm Aland Aki — a full-stack developer focused on building fast, reliable tools that automate tasks and solve real problems."
   },
   "about": {
     "title": "About Me",
-    "description": "I’m a passionate developer with a love for automation, UI/UX, and clean design. I build tools that help developers work smarter — not harder.",
-    "stack": ["React", "Node.js", "Tailwind", "AI"]
+    "description": "I’m a developer with focus on AI, Frontend & Backend",
+"stack": [ "React", "Next.js", "Tailwind CSS", "Node.js", "Express.js", "Docker", "TypeScript", "Framer Motion"]
   },
   "tools": {
     "title": "My Tools",
-    "open": "Open Tool →",
+    "open": "Open Tool",
     "mcChecker": {
       "title": "MC Username Checker",
-      "description": "Check Minecraft username availability in real-time."
+      "description": "Check MC username availability in real-time."
     },
     "typingTest": {
       "title": "Typing Speed Tester",

@@ -15,7 +15,7 @@ export default function NowPlaying() {
 
   return (
     <motion.div
-      className="flex items-center gap-4 bg-[#1DB954]/10 p-4 rounded-lg backdrop-blur"
+      className="flex items-center gap-4 bg-[#008a00]/95 p-4 rounded-lg backdrop-blur"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}

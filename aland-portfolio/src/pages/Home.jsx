@@ -17,9 +17,6 @@ export default function Home({ darkMode, setDarkMode }) {
       <Hero />
       <About />
       <ToolSection />
-      <Stats />
-      <Testimonials />
-      <NewsletterSignup />
       <Footer />
     </main>
   );
